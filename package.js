@@ -1,6 +1,6 @@
 Package.describe({
     name: "mondora:notifications",
-    summary: "Add notifications to your app",
+    summary: "Notifications package for meteor",
     version: "0.1.0",
     git: "https://github.com/mondora/mondora-notifications.git"
 });
@@ -32,13 +32,11 @@ Package.onTest(function (api) {
         "server/utils.js",
         "server/methods.js",
         "server/publications.js"
-        //"server/notifications.js"
         ], "server");
     // Test files
     api.addFiles([
         "test/server/utils.unit.js",
         "test/server/methods.unit.js",
         "test/server/publications.unit.js"
-        //"test/server/notifications.unit.js"
     ], "server");
 });

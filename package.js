@@ -1,7 +1,7 @@
 Package.describe({
     name: "mondora:notifications",
     summary: "Notifications package for meteor",
-    version: "0.1.1",
+    version: "0.1.2",
     git: "https://github.com/mondora/mondora-notifications.git"
 });
 
@@ -10,6 +10,7 @@ Package.onUse(function (api) {
     api.versionsFrom("METEOR@0.9.0");
     // Server dependencies
     api.use("underscore", "server");
+    api.use("aldeed:collection2@2.3.1", "server");
     // Exports
     api.export("Notifications", "server");
     // Package files

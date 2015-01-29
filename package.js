@@ -1,7 +1,7 @@
 Package.describe({
     name: "mondora:notifications",
     summary: "Notifications package for meteor",
-    version: "0.1.0",
+    version: "0.1.1",
     git: "https://github.com/mondora/mondora-notifications.git"
 });
 

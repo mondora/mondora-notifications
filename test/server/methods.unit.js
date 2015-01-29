@@ -229,7 +229,8 @@ Tinytest.add("notifications:run-action - runs the action with right arguments an
     };
     Meteor.user = ret(user);
     Collection = {
-        findOne: ret(notification)
+        findOne: ret(notification),
+        update: ret()
     };
     var context;
     var args;

@@ -59,12 +59,16 @@ Methods = {
         );
         var context = {
             notification: notification,
-            user: user,
-            resolve: function () {
-                this.resolved = true;
-            }
+            user: user
         };
         Actions[actionName].apply(context, _.rest(arguments, 2));
+        Collection.update({
+            _id: notificationId
+        }, {
+            $set: {
+                resolved: true
+            }
+        });
     }
 
 };
